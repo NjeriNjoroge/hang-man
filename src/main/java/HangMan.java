@@ -21,4 +21,14 @@ public String randomArray(){
   return myIndex;
 }
 
+public String[] splitRandom( String myIndex){
+  //String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
+//  int select = random.nextInt(suits.length);
+  //String myIndex = (suits[select]);
+  String[] wordSplit = myIndex.split("");
+
+  return wordSplit;
+
+}
+
 }

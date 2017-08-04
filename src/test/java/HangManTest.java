@@ -15,9 +15,15 @@ public class HangManTest{
   public void randomArray_showRandom_ArrayList(){
     HangMan testGame = new HangMan();
     //Random random = new Random();
-
     assertEquals("Clubs", testGame.randomArray());
+  }
 
+  @Test
+  public void splitRandom_splitTheRandomWord_ArrayList(){
+    HangMan testGame = new HangMan();
+    String[] splitWord = {"C", "l", "u", "b", "s"};
+    assertEquals(splitWord, testGame.splitRandom("Clubs"));
 
+    //assertEquals(true, testGame instanceOf HangMan);
   }
 }
